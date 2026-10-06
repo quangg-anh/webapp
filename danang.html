@@ -1,32 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Đà Nẵng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0A0C0E">
+    <meta name="description" content="Khám phá Đà Nẵng: Bà Nà Hills, Cầu Rồng, biển Mỹ Khê và Ngũ Hành Sơn.">
+    <title>Đà Nẵng — Khám phá Việt Nam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lexend:wght@600;700;800&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="preload" href="images/danang.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body class="detail-page" id="dau-trang">
+    <a class="skip-link" href="#noi-dung">Đến nội dung chính</a>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Điều hướng chính">
+            <a class="brand" href="index.html">Khám phá Việt Nam<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="hanoi.html">Hà Nội</a>
+                <a href="danang.html" aria-current="page">Đà Nẵng</a>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="quick-wrap">
+                <button class="quick-toggle" type="button" aria-expanded="false" aria-controls="quick-links">Chuyển nhanh đến <span aria-hidden="true">⌄</span></button>
+                <div class="quick-menu" id="quick-links" hidden>
+                    <a href="index.html#mien-bac">Miền Bắc</a>
+                    <a href="index.html#mien-trung">Miền Trung</a>
+                    <a href="index.html#mien-nam">Miền Nam</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <h1>ĐÀ NẴNG</h1>
+    <main id="noi-dung">
+        <section class="place-hero section-shell" aria-labelledby="place-title">
+            <div class="section-topline"><span class="eyebrow"><span class="index-dot"></span> ĐIỂM ĐẾN / MIỀN TRUNG</span><span class="section-aside">02 / 02</span></div>
+            <div class="place-hero-grid">
+                <div class="place-intro">
+                    <a class="back-link" href="index.html#dia-diem">← Về các điểm đến</a>
+                    <p class="kicker">THÀNH PHỐ BÊN BIỂN</p>
+                    <h1 id="place-title">Đà <span>Nẵng.</span></h1>
+                    <p class="place-lede">Một điểm dừng giữa miền Trung: đón gió biển buổi sớm, khám phá nhịp thành phố khi chiều xuống.</p>
+                    <div class="place-actions"><a class="button button--light" href="#kham-pha">Khám phá bên dưới <span aria-hidden="true">↓</span></a><a class="button button--line" href="form.html?diem-den=Da%20Nang">Lên kế hoạch <span aria-hidden="true">↗</span></a></div>
+                    <div class="place-facts"><div><span>MIỀN</span><strong>Miền Trung</strong></div><div><span>ĐIỂM GHÉ THĂM</span><strong>04 gợi ý</strong></div></div>
+                </div>
+                <figure class="place-visual"><img src="images/danang.jpg" alt="Khung cảnh Đà Nẵng" width="700" height="372"><figcaption>02 / ĐÀ NẴNG <span aria-hidden="true">—</span> MIỀN TRUNG</figcaption></figure>
+            </div>
+            <div class="section-bottomline"><span>CUỘN ĐỂ XEM THÊM</span><span>↓</span></div>
+        </section>
 
-    <h3>Địa điểm nổi bật:</h3>
-    <ol>
-        <li>Bà Nà Hills</li>
-        <li>Cầu Rồng</li>
-        <li>Biển Mỹ Khê</li>
-        <li>Ngũ Hành Sơn</li>
-    </ol>
+        <section class="place-spots section-shell" id="kham-pha" aria-labelledby="spots-title">
+            <div class="section-topline"><span class="eyebrow"><span class="index-dot"></span> 01 / ĐỊA ĐIỂM</span><span class="section-aside">Những chỗ đáng ghé</span></div>
+            <div class="spots-heading"><p class="kicker">ĐI TỪNG CHẶNG</p><h2 id="spots-title">Địa điểm <span>nổi bật.</span></h2><p>Bốn điểm dừng để bắt đầu khám phá Đà Nẵng, từ cảnh biển đến nhịp sống thành phố.</p></div>
+            <ol class="spot-list">
+                <li><span class="spot-index">01 / 04</span><h3>Bà Nà Hills</h3><span class="spot-mark" aria-hidden="true"></span></li>
+                <li><span class="spot-index">02 / 04</span><h3>Cầu Rồng</h3><span class="spot-mark" aria-hidden="true"></span></li>
+                <li><span class="spot-index">03 / 04</span><h3>Biển Mỹ Khê</h3><span class="spot-mark" aria-hidden="true"></span></li>
+                <li><span class="spot-index">04 / 04</span><h3>Ngũ Hành Sơn</h3><span class="spot-mark" aria-hidden="true"></span></li>
+            </ol>
+            <a class="text-link place-external" href="https://danangfantasticity.com" target="_blank" rel="noopener noreferrer">Tìm hiểu thêm về du lịch Đà Nẵng <span aria-hidden="true">↗</span></a>
+            <div class="section-bottomline"><span>BỐN GỢI Ý / MỘT CHUYẾN ĐI</span><span>02 / 02</span></div>
+        </section>
 
-    <p>
-        <img src="images/danang.jpg" alt="Đà Nẵng" width="400">
-    </p>
-
-    <p>
-        <a href="https://danangfantasticity.com" target="_blank">Tìm hiểu thêm về du lịch Đà Nẵng</a>
-    </p>
-
-    <p>
-        <a href="index.html">← Quay lại trang chủ</a>
-    </p>
-
+        <section class="place-next section-shell" aria-labelledby="next-title"><div><p class="kicker">TIẾP TỤC HÀNH TRÌNH</p><h2 id="next-title">Còn nhiều điều <span>để đi.</span></h2><p>Quay về những con phố Hà Nội hoặc lật tiếp bộ bưu thiếp để chọn điểm dừng của riêng bạn.</p></div><div class="button-row"><a class="button button--light" href="hanoi.html">Đến Hà Nội <span aria-hidden="true">↗</span></a><a class="button button--line" href="index.html#bo-buu-thiep">Xem Top 5 <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer class="detail-footer section-shell"><span>KHÁM PHÁ VIỆT NAM <span class="accent">.</span></span><a href="index.html">← Quay lại trang chủ</a><a href="images/CREDITS.txt">Nguồn ảnh ↗</a></footer>
 </body>
 </html>

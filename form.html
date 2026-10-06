@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#0A0C0E">
+	<meta name="description" content="Phác thảo hành trình khám phá Hà Nội hoặc Đà Nẵng theo nhịp đi của bạn.">
+	<title>Lên kế hoạch — Khám phá Việt Nam</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lexend:wght@600;700;800&display=swap&subset=vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body class="planner-page" id="dau-trang">
+	<a class="skip-link" href="#noi-dung">Đến nội dung chính</a>
+	<header class="site-header">
+		<nav class="nav-shell" aria-label="Điều hướng chính">
+			<a class="brand" href="index.html">Khám phá Việt Nam<span>.</span></a>
+			<div class="nav-links">
+				<a href="index.html">Trang chủ</a>
+				<a href="hanoi.html">Hà Nội</a>
+				<a href="danang.html">Đà Nẵng</a>
+				<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google <span aria-hidden="true">↗</span></a>
+			</div>
+			<div class="quick-wrap">
+				<button class="quick-toggle" type="button" aria-expanded="false" aria-controls="quick-links">Chuyển nhanh đến <span aria-hidden="true">⌄</span></button>
+				<div class="quick-menu" id="quick-links" hidden>
+					<a href="index.html#mien-bac">Miền Bắc</a>
+					<a href="index.html#mien-trung">Miền Trung</a>
+					<a href="index.html#mien-nam">Miền Nam</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="planner-hero section-shell" id="noi-dung">
+		<div class="section-topline"><span class="eyebrow"><span class="index-dot"></span> GỢI Ý / HÀNH TRÌNH</span><span class="section-aside">Lên đường theo cách của bạn</span></div>
+		<div class="planner-layout">
+			<div class="planner-heading">
+				<a class="back-link" href="index.html#dia-diem">← Về các điểm đến</a>
+				<p class="kicker">BẠN MUỐN ĐI ĐÂU?</p>
+				<h1>Lên kế hoạch <span>chuyến đi.</span></h1>
+				<p>Chọn điểm đến và nhịp đi bạn thích. Bản nháp dưới đây tổng hợp các nơi đã có trên trang, để bạn bắt đầu dễ hơn.</p>
+				<div class="planner-photo" aria-hidden="true"></div>
+			</div>
+			<form class="planner-form" id="travel-planner">
+				<h2>Phác thảo hành trình.</h2>
+				<p>Vài lựa chọn nhỏ trước khi bắt đầu khám phá.</p>
+				<div class="planner-fields">
+					<label for="diem-den">Điểm đến
+						<select id="diem-den" name="diem-den" required>
+							<option value="Hà Nội">Hà Nội</option>
+							<option value="Đà Nẵng">Đà Nẵng</option>
+						</select>
+					</label>
+					<label for="so-ngay">Số ngày dự định
+						<input id="so-ngay" name="so-ngay" type="number" min="1" max="30" value="3" required inputmode="numeric">
+					</label>
+					<label for="nhip-do">Nhịp đi
+						<select id="nhip-do" name="nhip-do" required>
+							<option value="Thoải mái">Thoải mái</option>
+							<option value="Khám phá nhiều">Khám phá nhiều</option>
+						</select>
+					</label>
+				</div>
+				<button class="button button--light" type="submit">Xem bản nháp <span aria-hidden="true">↗</span></button>
+				<p class="planner-hint">Không gửi hoặc lưu thông tin của bạn. Bản nháp hiển thị ngay trên trang.</p>
+				<noscript><p class="planner-hint">Cần bật JavaScript để xem bản nháp. Bạn vẫn có thể xem các điểm đến trên trang <a href="hanoi.html">Hà Nội</a> và <a href="danang.html">Đà Nẵng</a>.</p></noscript>
+				<div class="plan-result" id="plan-result" tabindex="-1" hidden>
+					<p class="kicker">BẢN NHÁP CỦA BẠN</p>
+					<h3>Điểm dừng gợi ý.</h3>
+					<p id="plan-summary"></p>
+					<ul id="plan-suggestions"></ul>
+					<small>Đây là danh sách tham khảo, không phải lịch trình chia theo từng ngày. Kiểm tra giờ mở cửa và điều kiện thực tế trước khi đi.</small>
+				</div>
+			</form>
+		</div>
+		<div class="section-bottomline"><span>MỖI CHUYẾN ĐI BẮT ĐẦU TỪ MỘT ĐIỂM DỪNG</span><span>↗</span></div>
+	</main>
+	<footer class="detail-footer section-shell"><span>KHÁM PHÁ VIỆT NAM <span class="accent">.</span></span><a href="index.html">← Quay lại trang chủ</a><a href="images/CREDITS.txt">Nguồn ảnh ↗</a></footer>
+</body>
+</html>
